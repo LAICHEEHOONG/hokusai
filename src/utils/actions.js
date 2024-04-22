@@ -26,9 +26,9 @@ export async function getArticlesById(id) {
 
 
 
-    if (Object.keys(getArticles).length === 0) {
-      throw new Error("We could not find the article");
-    }
+    // if (Object.keys(getArticles).length === 0) {
+    //   throw new Error("We could not find the article");
+    // }
 
     const article = await getArticles.json();
 
