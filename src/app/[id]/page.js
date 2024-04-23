@@ -31,7 +31,7 @@ export default async function ArticlePage({ params }) {
 }
 
 export async function generateStaticParams() {
-  const articles = await fetch("http://localhost:3004/articles").then((res) =>
+  const articles = await fetch(`${process.env.JSON_API}/articles`).then((res) =>
     res.json()
   );
 
